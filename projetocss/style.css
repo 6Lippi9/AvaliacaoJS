@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+body{
+    background:#181818;
+    color:#fff;
+}
+
+nav{
+    background:#101010;
+    padding:18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    text-transform:uppercase;
+    text-shadow:2px 2px 8px #000;
+}
+
+.logo::first-letter{
+    color:#ff7b00;
+    font-size:40px;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff7b00;
+}
+
+.banner{
+    height:85vh;
+    background:
+    linear-gradient(#00000088,#00000088),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1400');
+    
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.banner-texto{
+    max-width:600px;
+}
+
+.banner h2{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.botao{
+    display:inline-block;
+    margin-top:20px;
+    background:#ff7b00;
+    color:white;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.botao:hover{
+    transform:scale(1.05);
+    background:white;
+    color:#000;
+}
+
+.container{
+    padding:50px 40px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    width:300px;
+    background:#222;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 0 10px #000;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-info{
+    padding:18px;
+}
+
+.estrelas{
+    color:gold;
+    margin-top:10px;
+}
+
+.detalhes{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+}
+
+.detalhes img{
+    width:100%;
+    border-radius:12px;
+    transition:.4s;
+}
+
+.detalhes img:hover{
+    transform:scale(1.03);
+}
+
+form{
+    margin-top:25px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+input,button{
+    padding:12px;
+    border:none;
+    border-radius:6px;
+}
+
+button{
+    background:#ff7b00;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+.comprar{
+    animation:pulsar 1s infinite;
+}
+
+@keyframes pulsar{
+    50%{
+        opacity:.5;
+    }
+}
